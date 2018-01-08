@@ -24,13 +24,13 @@
             }
         },
 
-        plusFive: function (value){
+        plusOne: function (value){
             this.setState({
                 total: this.state.total + 1
             })
         },
 
-        plusOne: function (value){
+        plusFive: function (value){
             this.setState({
                 total: this.state.total + 5
             })
@@ -39,6 +39,7 @@
         plusTen: function (value){
             this.setState({
                 total: this.state.total + 10
+            })
         },
 
         render: function(){
@@ -46,9 +47,9 @@
                 <div id="container">
                     <div>
                         <h1>{this.state.total}</h1>
-                        <button id="one" {this.plusOne}>Plus One</button>
-                        <button id="five" {this.plusFive}>Plus Five</button>
-                        <button id="ten" {this.plusTen}>Plus Ten</button>
+                        <button id="one" onClick={this.plusOne}>Plus One</button>
+                        <button id="five" onClick={this.plusFive}>Plus Five</button>
+                        <button id="ten" onClick={this.plusTen}>Plus Ten</button>
                     </div>
                 </div>
             )
