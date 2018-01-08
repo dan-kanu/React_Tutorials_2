@@ -12,6 +12,15 @@
     <script src="https://fb.me/react-0.14.7.js"></script>
     <script src="https://fb.me/react-dom-0.14.7.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.2/browser.min.js"></script>
+
+    <style>
+        button{
+            background-color: red;
+            padding:10px;
+            margin:10px;
+            color:#fff;
+        }
+    </style>
   </head>
   <body>
     <div id="app"></div>
@@ -47,9 +56,9 @@
                 <div id="container">
                     <div>
                         <h1>{this.state.total}</h1>
-                        <button id="one" onClick={this.plusOne}>Plus One</button>
-                        <button id="five" onClick={this.plusFive}>Plus Five</button>
-                        <button id="ten" onClick={this.plusTen}>Plus Ten</button>
+                        <button className="button btn" id="one" onClick={this.plusOne}>Plus One</button>
+                        <button className="button btn" id="five" onClick={this.plusFive}>Plus Five</button>
+                        <button className="button btn" id="ten" onClick={this.plusTen}>Plus Ten</button>
                     </div>
                 </div>
             )
