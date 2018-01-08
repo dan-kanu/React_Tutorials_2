@@ -20,15 +20,35 @@
         //Set initial State
         getInitialState: function(){
             return{
-                Total:0
+                total:0
             }
+        },
+
+        plusFive: function (value){
+            this.setState({
+                total: this.state.total + 1
+            })
+        },
+
+        plusOne: function (value){
+            this.setState({
+                total: this.state.total + 5
+            })
+        },
+
+        plusTen: function (value){
+            this.setState({
+                total: this.state.total + 10
         },
 
         render: function(){
             return(
                 <div id="container">
                     <div>
-                        <h1>This is a test</h1>
+                        <h1>{this.state.total}</h1>
+                        <button id="one" {this.plusOne}>Plus One</button>
+                        <button id="five" {this.plusFive}>Plus Five</button>
+                        <button id="ten" {this.plusTen}>Plus Ten</button>
                     </div>
                 </div>
             )
