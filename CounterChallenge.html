@@ -16,10 +16,60 @@
     <style>
         button{
             background-color: red;
+<<<<<<< HEAD
             padding:10px;
             margin:10px;
             color:#fff;
         }
+=======
+            padding:15px;
+            margin:10px;
+            color:#fff;
+        }
+
+        div#container {
+            width: 400px;
+            margin: auto;
+            text-align: center;
+            margin-top:100px;
+        }
+
+        button#one {
+            background: #5DA0CE;
+            border-bottom: 10px solid #5a88c1;
+            transition: 0.5s;
+        }
+
+        button#one:hover {
+            background: #5DA0CE;
+            border-bottom: 5px solid #5a88c1;
+            transition: 0.5s;
+        }
+
+        button#five {
+            background: #E3314F;
+            border-bottom: 10px solid #6F2D61;
+            transition: 0.5s;
+        }
+        button#five:hover {
+            border-bottom: 5px solid #6F2D61;
+            transition: 0.5s;
+        }
+
+        button#ten {
+            background: #E9662D;
+            border-bottom: 10px solid #a03e17;
+            transition: 0.5s;
+        }
+        button#ten:hover {
+            border-bottom: 5px solid #a03e17;
+            transition: 0.5s;
+        }
+        #count {
+            font-size: 100px;
+            color: #6F2D61;
+        }
+>>>>>>> 6decdd81ba36531181fb6fc7d840a1f733404193
     </style>
   </head>
   <body>
@@ -55,7 +105,11 @@
             return(
                 <div id="container">
                     <div>
+<<<<<<< HEAD
                         <h1>{this.state.total}</h1>
+=======
+                        <h1 id="count">{this.state.total}</h1>
+>>>>>>> 6decdd81ba36531181fb6fc7d840a1f733404193
                         <button className="button btn" id="one" onClick={this.plusOne}>Plus One</button>
                         <button className="button btn" id="five" onClick={this.plusFive}>Plus Five</button>
                         <button className="button btn" id="ten" onClick={this.plusTen}>Plus Ten</button>
