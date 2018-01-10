@@ -76,41 +76,34 @@
     <div id="app"></div>
     <script type="text/babel">
     var Counter = React.createClass({
-        //Set initial State
+        //Set initial Stategit 
         getInitialState: function(){
             return{
                 total:0
             }
         },
 
-        plusOne: function (value){
-            this.setState({
-                total: this.state.total + 1
-            })
-        },
+        
 
-        plusFive: function (value){
+        incrementCount: function(value) {
             this.setState({
-                total: this.state.total + 5
-            })
-        },
-
-        plusTen: function (value){
-            this.setState({
-                total: this.state.total + 10
-            })
-        },
-
+              total: this.state.total + value
+            });
+          },
         render: function(){
             return(
                 <div id="container">
                     <div>
 <<<<<<< HEAD
                         <h1>{this.state.total}</h1>
+<<<<<<< HEAD
 =======
                         <h1 id="count">{this.state.total}</h1>
 >>>>>>> 6decdd81ba36531181fb6fc7d840a1f733404193
                         <button className="button btn" id="one" onClick={this.plusOne}>Plus One</button>
+=======
+                        <button className="button btn" id="one" onClick={this.incrementCount.bind(this, 1)}>Plus One</button>
+>>>>>>> feature1
                         <button className="button btn" id="five" onClick={this.plusFive}>Plus Five</button>
                         <button className="button btn" id="ten" onClick={this.plusTen}>Plus Ten</button>
                     </div>
